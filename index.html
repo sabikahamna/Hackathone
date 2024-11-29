@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-builder">
+        <h1>Dynamic Resume Builder</h1>
+
+        <!-- Form to enter resume information -->
+        <div class="form-container">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Describe your experience"></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" placeholder="Describe your level of Education"></textarea>
+
+            <!-- Layout and color scheme options -->
+            <label for="layout">Choose Layout:</label>
+            <select id="layout">
+                <option value="layout1">Classic</option>
+                <option value="layout2">Modern</option>
+                <option value="layout3">Creative</option>
+            </select>
+
+            <label for="color">Choose Color Scheme:</label>
+            <select id="color">
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+            </select>
+
+            <button id="generate-resume">Generate Resume</button>
+        </div>
+
+        <!-- Output container for the resume -->
+        <div id="resume-output" class="resume-output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
